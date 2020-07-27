@@ -102,16 +102,26 @@ public class MainActivity extends AppCompatActivity {
 //                Task 2: hiej=n thi nhu chuoi nhu sau
 //                 chuoi: 1 - 2 - 3 - 4
 //                10 -> 0-9 : random trả ve index trong mảng
+                // Rs Task 1:
                 if(mArrayRange.size()<=0){
                     Toast.makeText(MainActivity.this,"Kết thúc!!!",Toast.LENGTH_LONG).show();
                 }
                 int index=mRandom.nextInt(mArrayRange.size());
                 mValueRandom = (int) mArrayRange.get(index);
-                mValue += mValueRandom +"-";
+                mValue += mValueRandom + " - ";
+                // Rs Task 2:
+                // Cách 1: Hiển thị
+                if(mArrayRange.size()==1) {
+                   mValue += mValueRandom;
+                }
+//                // Cách 2 ; Dùng subString
+//                if(mArrayRange.size()==1) {
+////                    giữ lại từ vị trí 0 đến length -3
+//                    mValue =mValue.substring(0,mValue.length()-3);
+//                }
                 mtxtResult.setText(mValue);
                 mArrayRange.remove(index);
-
-
+                
             }
         });
 
