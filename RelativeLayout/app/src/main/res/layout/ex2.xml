@@ -1,72 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    android:layout_height="match_parent">
     <TextView
         android:id="@+id/tv1"
+        android:layout_alignParentRight="true"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Orange"
+        android:text="View1"
         android:textSize="30sp"
         android:background="#FF9800"
         />
     <TextView
         android:id="@+id/tv2"
-        android:layout_alignLeft="@+id/tv1"
         android:layout_above="@+id/tv1"
+        android:layout_toLeftOf="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Blue"
+        android:text="View2"
         android:textSize="30sp"
-        android:background="#03A9F4"
+        android:background="#FF9800"
         />
     <TextView
         android:id="@+id/tv3"
-        android:layout_alignLeft="@+id/tv2"
         android:layout_above="@+id/tv2"
+        android:layout_toLeftOf="@+id/tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Green"
+        android:text="View3"
         android:textSize="30sp"
-        android:background="#4CAF50"
+        android:background="#FF9800"
         />
     <TextView
         android:id="@+id/tv4"
-        android:layout_alignLeft="@+id/tv3"
         android:layout_above="@+id/tv3"
+        android:layout_toLeftOf="@+id/tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red"
+        android:text="View4"
         android:textSize="30sp"
-        android:background="#F44336"
+        android:background="#FF9800"
         />
     <TextView
         android:id="@+id/tv5"
-        android:layout_alignLeft="@+id/tv1"
         android:layout_below="@+id/tv1"
+        android:layout_toLeftOf="@+id/tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gray"
+        android:text="View5"
         android:textSize="30sp"
-        android:background="#AEAAA5"
+        android:background="#FF9800"
         />
     <TextView
         android:id="@+id/tv6"
-        android:layout_alignLeft="@+id/tv5"
         android:layout_below="@+id/tv5"
+        android:layout_toLeftOf="@+id/tv5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pink"
+        android:text="View6"
         android:textSize="30sp"
-        android:background="#FF0033"
+        android:background="#FF9800"
         />
-
-
-
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_below="@+id/tv6"
+        android:layout_toLeftOf="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View7"
+        android:textSize="30sp"
+        android:background="#FF9800"
+        />
 
 
 
